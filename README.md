@@ -22,10 +22,11 @@ Step 2. Add the dependency
 
 
 原项目地址：
-[HermesEventBus](https://github.com/Xiaofei-it/HermesEventBus)
 
-[Hermes](https://github.com/Xiaofei-it/Hermes)
+1、[HermesEventBus](https://github.com/Xiaofei-it/HermesEventBus)
 
-[Concurrent-Utils](https://github.com/Xiaofei-it/Concurrent-Utils)
+2、[Hermes](https://github.com/Xiaofei-it/Hermes)
 
-[文档请参照](doc)
+3、[Concurrent-Utils](https://github.com/Xiaofei-it/Concurrent-Utils)
+
+[文档请点击](doc)
