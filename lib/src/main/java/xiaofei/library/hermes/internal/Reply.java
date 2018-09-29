@@ -43,8 +43,8 @@ public class Reply implements Parcelable {
 
     private Object mResult;
 
-    public static final Parcelable.Creator<Reply> CREATOR
-            = new Parcelable.Creator<Reply>() {
+    public static final Creator<Reply> CREATOR
+            = new Creator<Reply>() {
         public Reply createFromParcel(Parcel in) {
             Reply reply = new Reply();
             reply.readFromParcel(in);

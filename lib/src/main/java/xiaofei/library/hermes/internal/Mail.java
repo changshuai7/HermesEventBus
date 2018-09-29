@@ -41,8 +41,8 @@ public class Mail implements Parcelable {
 
     private ParameterWrapper[] mParameters;
 
-    public static final Parcelable.Creator<Mail> CREATOR
-            = new Parcelable.Creator<Mail>() {
+    public static final Creator<Mail> CREATOR
+            = new Creator<Mail>() {
         public Mail createFromParcel(Parcel in) {
             Mail mail = new Mail();
             mail.readFromParcel(in);

@@ -35,8 +35,8 @@ public class MethodWrapper extends BaseWrapper implements Parcelable {
 
     private TypeWrapper mReturnType;
 
-    public static final Parcelable.Creator<MethodWrapper> CREATOR
-            = new Parcelable.Creator<MethodWrapper>() {
+    public static final Creator<MethodWrapper> CREATOR
+            = new Creator<MethodWrapper>() {
         public MethodWrapper createFromParcel(Parcel in) {
             MethodWrapper methodWrapper = new MethodWrapper();
             methodWrapper.readFromParcel(in);

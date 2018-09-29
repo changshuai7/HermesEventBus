@@ -29,8 +29,8 @@ import xiaofei.library.hermes.util.TypeUtils;
  */
 public class TypeWrapper extends BaseWrapper implements Parcelable {
 
-    public static final Parcelable.Creator<TypeWrapper> CREATOR
-            = new Parcelable.Creator<TypeWrapper>() {
+    public static final Creator<TypeWrapper> CREATOR
+            = new Creator<TypeWrapper>() {
         public TypeWrapper createFromParcel(Parcel in) {
             TypeWrapper typeWrapper = new TypeWrapper();
             typeWrapper.readFromParcel(in);

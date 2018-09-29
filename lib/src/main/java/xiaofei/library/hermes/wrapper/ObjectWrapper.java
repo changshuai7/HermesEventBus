@@ -47,8 +47,8 @@ public class ObjectWrapper extends BaseWrapper implements Parcelable {
 
     private int mType;
 
-    public static final Parcelable.Creator<ObjectWrapper> CREATOR
-            = new Parcelable.Creator<ObjectWrapper>() {
+    public static final Creator<ObjectWrapper> CREATOR
+            = new Creator<ObjectWrapper>() {
         public ObjectWrapper createFromParcel(Parcel in) {
             ObjectWrapper objectWrapper = new ObjectWrapper();
             objectWrapper.readFromParcel(in);

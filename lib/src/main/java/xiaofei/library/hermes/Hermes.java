@@ -226,4 +226,12 @@ public class Hermes {
         CHANNEL.setHermesListener(listener);
     }
 
+    /**
+     * For test only
+     * @return
+     */
+    public static String getVersion() {
+        return "0.5.2-alpha2";
+    }
+
 }

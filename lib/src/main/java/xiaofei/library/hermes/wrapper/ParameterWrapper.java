@@ -36,8 +36,8 @@ public class ParameterWrapper extends BaseWrapper implements Parcelable {
     //only used here.
     private Class<?> mClass;
 
-    public static final Parcelable.Creator<ParameterWrapper> CREATOR
-            = new Parcelable.Creator<ParameterWrapper>() {
+    public static final Creator<ParameterWrapper> CREATOR
+            = new Creator<ParameterWrapper>() {
         public ParameterWrapper createFromParcel(Parcel in) {
             ParameterWrapper parameterWrapper = new ParameterWrapper();
             parameterWrapper.readFromParcel(in);
