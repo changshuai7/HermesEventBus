@@ -30,7 +30,6 @@ Step 2. Add the dependency
 
 3、[Concurrent-Utils](https://github.com/Xiaofei-it/Concurrent-Utils)
 
-[文档请点击](doc)
 
 混淆配置：
 
