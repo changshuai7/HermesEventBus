@@ -18,6 +18,7 @@ Step 2. Add the dependency
 
 本项目基于原项目(2018.09.29-->HermesEventBus0.3.0/Hermes0.7.0/Concurrent-Utils0.1.4)
 修改了如下：
+
 1.修复ActionBarActivity找不到的错误
 
 
