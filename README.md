@@ -34,7 +34,7 @@ Step 2. Add the dependency
 
 混淆配置：
 
-	-keep class evbean.** { *; }
+	-keep class evbean.** { *; }  #这里写你自己的javabean
 	#EventBus
 	-keepattributes *Annotation*
 	-keepclassmembers class ** {
