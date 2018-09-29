@@ -31,3 +31,20 @@ Step 2. Add the dependency
 3、[Concurrent-Utils](https://github.com/Xiaofei-it/Concurrent-Utils)
 
 [文档请点击](doc)
+
+混淆配置：
+
+	-keep class evbean.** { *; }
+	#EventBus
+	-keepattributes *Annotation*
+	-keepclassmembers class ** {
+	    @org.greenrobot.eventbus.Subscribe <methods>;
+	}
+	-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+	# Only required if you use AsyncExecutor
+	-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+	    <init>(java.lang.Throwable);
+	}
+	-keep class xiaofei.** { *;}
+	-dontwarn xiaofei.** 
+
