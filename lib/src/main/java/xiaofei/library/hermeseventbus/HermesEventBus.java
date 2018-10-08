@@ -287,10 +287,15 @@ public class HermesEventBus {
                 }
             });
              */
-            IMainService mainService = Hermes.getInstanceInService(service, IMainService.class);
-            mainService.register(Process.myPid(), SubService.getInstance());
-            mRemoteApis.set(mainService);
-            mState = STATE_CONNECTED;
+            try{
+                IMainService mainService = Hermes.getInstanceInService(service, IMainService.class);
+                mainService.register(Process.myPid(), SubService.getInstance());
+                mRemoteApis.set(mainService);
+                mState = STATE_CONNECTED;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
         }
 
         @Override

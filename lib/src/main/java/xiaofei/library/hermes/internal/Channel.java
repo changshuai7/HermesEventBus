@@ -285,7 +285,11 @@ public class Channel {
                 }
             }
             if (mListener != null) {
-                mListener.onHermesConnected(mClass);
+                try {
+                    mListener.onHermesConnected(mClass);
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         }
 

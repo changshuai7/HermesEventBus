@@ -59,6 +59,9 @@ public class HermesInvocationHandler implements InvocationHandler {
             e.printStackTrace();
             Log.e(TAG, "Error occurs. Error " + e.getErrorCode() + ": " + e.getErrorMessage());
             return null;
+        } catch (Exception e){
+            e.printStackTrace();
+            return null;
         }
     }
 }
