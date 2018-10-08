@@ -13,13 +13,14 @@ Step 1：Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.changshuai7:HermesEventBus:1.0.2'
+	        implementation 'com.github.changshuai7:HermesEventBus:1.0.3'
 	}
 
 本项目基于原项目(2018.09.29-->HermesEventBus0.3.0/Hermes0.7.0/Concurrent-Utils0.1.4)
 修改了如下：
 
 1、修复ActionBarActivity找不到的错误(xiaofei.library.hermes.util.TypeUtils)
+2、通过try-catch捕获了修复了空指针的问题
 
 
 原项目地址：
